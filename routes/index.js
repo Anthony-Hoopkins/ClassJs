@@ -34,12 +34,12 @@ function foundShotPointsLine(numberPoints, pointsArray) {
         return current;
     });
 
-    console.log(sortArray);
     console.log(pointsArray);
 
     return `${ minLength } points: ${ pointsArray.findIndex((item) => item === minLengthPoints[0]) + 1 } ${ pointsArray.findIndex((item) => item === minLengthPoints[1]) + 1 }`;
 }
 
+console.log(foundShotPointsLine(5, [7, 6, 12, 13, 17]));
 console.log(foundShotPointsLine(5, [10, 3, 6, 2, 5]));
 console.log(foundShotPointsLine(5, [10, 1, 6, 12, 11]));
 console.log(foundShotPointsLine(5, [100, 77, 15, 22, 99]));
